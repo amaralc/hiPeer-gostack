@@ -1,5 +1,5 @@
 // Imports 
-const app = require('./app');
+import app from './app';
 
 // Content 
 app.listen(3333);

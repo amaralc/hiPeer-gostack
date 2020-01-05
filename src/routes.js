@@ -1,14 +1,12 @@
-// Importa dependencias
-const { Router } = require('express');
+// Imports
+import { Router } from 'express';
 
-
-// Define rotas
+// Content
 const routes = new Router();
-
 
 routes.get('/', (req, res)=>{ // Se acessar rota raiz
   return res.json({ message: 'Hello World!'}); // Retorna JSON
 })
 
-// Exporta rotas
-module.exports = routes;
+// Exports
+export default routes;

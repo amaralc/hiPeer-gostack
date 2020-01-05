@@ -1,9 +1,9 @@
 // Imports
-const express = require('express');
-const routes = require('./routes');
+import express from 'express';
+import routes from './routes';
 
 // Contents
-class App { // Define class App
+class App { // Define classe App
   constructor(){
     this.server = express();
     this.middlewares();
@@ -21,4 +21,4 @@ class App { // Define class App
 }
 
 // Exports
-module.exports = new App().server;
+export default new App().server;
