@@ -1,7 +1,8 @@
-HiPeer
+﻿# HiPeer
 
 Estrutura de pastas:
-/doc - Arquivos de documentação e planejamento
+
+* /doc - Arquivos de documentação e planejamento
 
 * /sql - Scripts e informações pertinentes ao banco de dados
 
