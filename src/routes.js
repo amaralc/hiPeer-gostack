@@ -1,12 +1,10 @@
-// Imports
+// Imports ---------------------------------------------------------------------
 import { Router } from 'express';
 
-// Content
+// Content ---------------------------------------------------------------------
 const routes = new Router();
 
-routes.get('/', (req, res)=>{ // Se acessar rota raiz
-  return res.json({ message: 'Hello World!'}); // Retorna JSON
-})
+routes.get('/', (req, res) => res.json({ message: 'Hello World!' }));
 
-// Exports
+// Exports ---------------------------------------------------------------------
 export default routes;

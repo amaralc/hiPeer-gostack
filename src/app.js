@@ -1,24 +1,25 @@
-// Imports
+// Imports ---------------------------------------------------------------------
 import express from 'express';
 import routes from './routes';
 
-// Contents
-class App { // Define classe App
-  constructor(){
+// Content ---------------------------------------------------------------------
+// Define classe App
+class App {
+  constructor() {
     this.server = express();
     this.middlewares();
     this.routes();
   }
 
-  middlewares(){
+  middlewares() {
     // Habilita applicacao a receber requisicoes em formato JSON
     this.server.use(express.json());
   }
 
-  routes(){ //
+  routes() {
     this.server.use(routes);
   }
 }
 
-// Exports
+// Exports ---------------------------------------------------------------------
 export default new App().server;
