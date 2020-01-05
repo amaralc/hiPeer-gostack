@@ -1,6 +1,6 @@
-﻿# HiPeer
+﻿# hiPeer
 
-Estrutura de pastas:
+## Estrutura de pastas:
 
 * /doc - Arquivos de documentação e planejamento
 
@@ -15,3 +15,13 @@ Estrutura de pastas:
 	* /fe_app - Front-end do aplicativo móvel
 
 	* /fe_web - Front-end do site web
+
+## Extensões VSCode
+
+* Dracula Official > Dracula
+* Material Icon Theme
+* Color Highlight
+* Rocketseat ReactJS
+* Rocketseat Reactive Native
+* ESLint
+* Prettier
