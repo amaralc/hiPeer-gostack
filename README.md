@@ -25,3 +25,10 @@
 * Rocketseat Reactive Native
 * ESLint
 * Prettier
+
+## Dependencias
+
+* yarn add sequelize
+* yarn add sequelize-cli -D
+* yarn add pg
+* yarn add pg-hstore
