@@ -41,3 +41,10 @@
 > 1. Cria UserController (classe que exporta User)
 > 1. Retorna erro caso e-mail ja exista na base de dados
 > 1. Altera routes para usar UserController na rota /users
+
+* branch 'feature-gerando-hash-da-senha'
+> 1. Objetivo: gerar o hash da senha do usuario
+> 1. Atual: ao cadastrar, enviamos o 'password_hash' diretamente
+> 1. Objetivo especifico: usuario enviar apenas password e aplicacao gerar o hash
+>> Dependencias:
+>> `yarn add bcryptjs`
