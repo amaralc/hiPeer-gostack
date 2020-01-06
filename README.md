@@ -1,5 +1,4 @@
-﻿# hiPeer
-
+﻿
 ## Estrutura de pastas:
 
 * /doc - Arquivos de documentação e planejamento
@@ -31,3 +30,14 @@
 * yarn add sequelize-cli -D
 * yarn add pg
 * yarn add pg-hstore
+
+## Resumo de modificacoes
+
+* branch 'feature-criando-loader-de-models'
+> 1. Criar arquivo 'database/index.js' que realize conexao com banco de dados postgres definido em config/database;
+> 1. Carregar todos os models da aplicacao neste arquivo;
+
+* branch 'feature-cadastro-de-usuarios'
+> 1. Cria UserController (classe que exporta User)
+> 1. Retorna erro caso e-mail ja exista na base de dados
+> 1. Altera routes para usar UserController na rota /users
