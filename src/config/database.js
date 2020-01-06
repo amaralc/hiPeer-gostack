@@ -3,7 +3,7 @@ module.exports = {
   host: 'localhost',
   username: 'postgres',
   password: 'docker',
-  database: 'hipeers',
+  database: 'hipeer',
   define: {
     timestamps: true,
     underscored: true, // tabelas com formato_underscore
