@@ -27,6 +27,11 @@ class User extends Model {
 
     return this;
   }
+
+  // Recebe senha e retorna comparacao da senha recebida com senha registrada na linha deste usuario no database
+  checkPassword(password) {
+    return bcrypt.compare(password, this.password_hash);
+  }
 }
 
 // Exports ---------------------------------------------------------------------
