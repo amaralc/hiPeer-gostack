@@ -55,3 +55,6 @@
 * branch 'feature/update-do-usuario'
 > Objetivo: permitir que usuario altere alguns campos de dados cadastrais
 
+* branch 'amaralc/feature/validando-dados-de-entrada'
+> Objetivo: validar dados de entrada no backend (definir informacoes obrigatorias e avaliar se dados sao coerentes)
+
