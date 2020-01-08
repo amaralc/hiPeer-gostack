@@ -52,3 +52,6 @@
 * branch 'feature/middleware-de-autenticacao.mp4'
 > Objetivo: bloquear usuario a acessar algum tipo de rota caso ainda não esteja logado
 
+* branch 'feature/update-do-usuario'
+> Objetivo: permitir que usuario altere alguns campos de dados cadastrais
+
