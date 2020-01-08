@@ -2,12 +2,28 @@
 
 // Imports ---------------------------------------------------------------------
 import jwt from 'jsonwebtoken'; // Iporta json web token dependency
+import * as Yup from 'yup';
 import User from '../models/User'; // Importa User model
 import authConfig from '../../config/auth'; // Importa arquivo de autenticacao do token
 
 // Content ---------------------------------------------------------------------
 class SessionController {
   async store(req, res) {
+    // Define schema para validacao dos dados de entrada durante cadastro do usuario
+    const schema = Yup.object().shape({
+      email: Yup.string()
+        .email()
+        .required(),
+      password: Yup.string()
+        .required()
+        .min(6),
+    });
+
+    // Valida se req.body esta passando na forma do schema definido, caso contrario retorna erro
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Validation failed' });
+    }
+
     // Salva email e senha que vem do corpo da requisicao
     const { email, password } = req.body;
 
