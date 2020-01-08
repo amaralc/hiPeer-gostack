@@ -21,6 +21,15 @@ class UserController {
       provider,
     });
   }
+
+  // Permite que usuario faca alteracao de seus dados cadastrais
+  // Rota nao pode ser acessivel a usuarios que nao estejam logados
+  async update(req, res) {
+    console.log(req.userId);
+
+    // Retorna objeto json para cliente
+    return res.json({ ok: true });
+  }
 }
 
 // Exports ---------------------------------------------------------------------
