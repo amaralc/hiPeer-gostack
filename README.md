@@ -48,3 +48,7 @@
 > 1. Objetivo especifico: usuario enviar apenas password e aplicacao gerar o hash
 >> Dependencias:
 >> `yarn add bcryptjs`
+
+* branch 'feature/middleware-de-autenticacao.mp4'
+> Objetivo: bloquear usuario a acessar algum tipo de rota caso ainda não esteja logado
+
