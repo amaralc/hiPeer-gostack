@@ -57,3 +57,11 @@
 >>> Yup é biblioteca de schema validation. Forma de definir campos presentes no corpo da requisicao
 >>> Passa atraves de funcoes os tipos desses campos
 
+* branch 'config/configurando-multer'
+> Objetivo: configurar forma de fazer upload de aplicos na aplicacao
+>> Upload de arquivos isolados
+>> Imagem enviada para servidor, servidor retorna ID da imagem
+>> Servidor retorna ID pro frontend, mantendo estrutura JSON (JSON nao suporte envio de arquivos)
+>> Multpart form data (suporta envio de arquivos físicos)
+>> Dependencies:
+>>> `yarn add multer`
